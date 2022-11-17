@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9ed8ff;
+    color: #222F3D;
+    margin: 0%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.grid-element {
+    border: 3px dotted gray;
+    width: 65%;
+    height: 110px;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.grid-element:hover {
+    border: 3px solid black;
+    background-color: #DDE6E8;
+}
+
+.restaurant-name {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.restaurant-image {
+    width: 75%;
+    height: 75%;
+    padding-top: 10px;
+}
+
+#filterText {
+    font-size: large;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #9bcbec;
+}
+
+.filter-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    background-color: #9bcbec;
+    border-radius: 15px;
+    margin-left: 20px;
+    width: fit-content;
+    border: 3px solid gray;
+}
+
+.filter-element {
+    font-size: large;
+    background-color: #0089e5;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border: 3px dotted gray;
+}
+
+.filter-element:hover {
+    border: 3px solid black;
+    background-color: #007acc;
+}
+
+.price-choice {
+    font-size: medium;
+    background-color: #93b1c7;
+    border-radius: 10px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px dotted gray;
+    display: none;
+}
+
+.price-choice:hover {
+    background-color: #758d97 !important;
+    border: 3px solid black !important;
+}
+
+.rating-choice {
+    font-size: medium;
+    background-color: #93b1c7;
+    border-radius: 10px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px dotted gray;
+    display: none;
+}
+
+.rating-choice:hover {
+    background-color: #758d97 !important;
+    border: 3px solid black !important;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+}
+
+#header {
+    width: 100%;
+    height: 35px;
+    background-color: #5e8199;
+    margin-top: 0%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#homeTitle {
+    text-align: center;
+    margin-top: 0%;
+    background-color: #9bcbec;
+    width: max-content;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 375px;
+    margin-right: 375px;
+    border: 3px solid black;
+}

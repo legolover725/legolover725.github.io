@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations In And Around Baltimore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a style = "text-decoration: none; color: #222F3D" href="index.html">
+            <h1 id="homeTitle">RESTURANTS IN AND AROUND BALTIMORE</h1>
+        </a>
+    </div>
+    <div class="filter-container">
+        <h3 id="filterText">Filters:</h3>
+        <div class="filter-element" id="priceFilter" onclick="displayPriceFilter()">Price</div>
+        <div class="price-choice" id="lowPrice" onclick="selectFilter('lowPrice'), lowestPrice()">$</div>
+        <div class="price-choice" id="midPrice" onclick="selectFilter('midPrice'), mediumPrice()">$$</div>
+        <div class="price-choice" id="highPrice" onclick="selectFilter('highPrice'), highestPrice()">$$$</div>
+        <div class="filter-element" id="ratingFilter" onclick="displayRatingFilter()">Rating</div>
+        <div class="rating-choice" id="4StarsFilter" onclick="selectFilter('4StarsFilter'), fourStars()">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/blank-star.png" alt="no-star">
+        </div>
+        <div class="rating-choice" id="4.5StarsFilter" onclick="selectFilter('4.5StarsFilter'), fourAndAHalfStars()">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/half_star.png" alt="half_star">
+        </div>
+        <div class="rating-choice" id="5StarsFilter" onclick="selectFilter('5StarsFilter'), fiveStars()">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+        </div>
+    </div>
+    <div class="grid-container">
+        <a href="miss-shirley's-cafe.html" style="text-decoration: none; color: #222F3D;">
+            <div class="grid-element mediumPrice stars4">
+                <div class="restaurant-name">Miss Shirley's Cafe</div>
+                <img class="restaurant-image" src="Images/miss-shirley's-images/Miss Shirley's Cafe.jpeg" alt="Grapefruit Brûlée">
+            </div>
+        </a>
+        <div class="grid-element mediumPrice stars4mid5">
+            <div class="restaurant-name">The Kabul</div>
+            <img class="restaurant-image" src="Images/the-kabul-images/The Kabul.jpeg" alt="Mediterranean Platter">
+        </div>
+        <div class="grid-element mediumPrice stars4mid5">
+            <div class="restaurant-name">Water for Chocolate</div>
+            <img class="restaurant-image" src="Images/water-for-chocolate-images/Water for Chocolate.jpeg" alt="Steak and eggs">
+        </div>
+        <div class="grid-element mediumPrice stars4">
+            <div class="restaurant-name">Faidley's Seafood</div>
+            <img class="restaurant-image" src="Images/faidley's-seafood-images/Faidley's Seafood.jpeg" alt="Lump Crab">
+        </div>
+        <div class="grid-element mediumPrice stars4">
+            <div class="restaurant-name">The Brewer's Art</div>
+            <img class="restaurant-image" src="Images/The Brewer's Art.jpeg" alt="Dish from The Brewer's Art">
+        </div>
+        <div class="grid-element mediumPrice stars4mid5">
+            <div class="restaurant-name">Puerto 511</div>
+            <img class="restaurant-image" src="Images/Puerto 511.jpeg" alt="Dish from Puerto 511">
+        </div>
+        <div class="grid-element highestPrice stars4mid5">
+            <div class="restaurant-name">The Capital Grill</div>
+            <img class="restaurant-image" src="Images/The Capital Grill.jpeg" alt="Dish from The Capital Grill">
+        </div>
+        <div class="grid-element mediumPrice stars4">
+            <div class="restaurant-name">The Helmand</div>
+            <img class="restaurant-image" src="Images/The Helmand.jpeg" alt="Dish from The Helmand">
+        </div>
+        <div class="grid-element mediumPrice stars5">
+            <div class="restaurant-name">Charmed</div>
+            <img class="restaurant-image" src="Images/Charmed.jpeg" alt="Dish from Charmed">
+        </div>
+        <div class="grid-element mediumPrice stars4">
+            <div class="restaurant-name">Blackwall Hitch</div>
+            <img class="restaurant-image" src="Images/Blackwall Hitch.jpeg" alt="Dish from Blackwall Hitch">
+        </div>
+        <div class="grid-element mediumPrice stars4mid5">
+            <div class="restaurant-name">La Calle</div>
+            <img class="restaurant-image" src="Images/La Calle.jpeg" alt="Dish from La Calle">
+        </div>
+        <div class="grid-element lowestPrice stars4mid5">
+            <div class="restaurant-name">Ovenbird Bakery</div>
+            <img class="restaurant-image" src="Images/Ovenbird Bakery.jpeg" alt="Dish from Ovenbird Bakery">
+        </div>
+    </div>
+</body>
+</html>
