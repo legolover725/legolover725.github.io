@@ -23,7 +23,8 @@ body {
     border-radius: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin-left: 375px;
+    margin-right: 375px;
     border: 3px solid black;
     text-decoration: none;
 }
@@ -51,6 +52,7 @@ nav {
 .sidebarElementName {
     padding: 20px 20px 0 20px;
     font-size: large;
+    font-weight: bold;
 }
 
 .line {
@@ -63,7 +65,8 @@ nav {
 .details {
     background-color: #9bcbec;
     width: 65%;
-    height: 300px;
+    height: fit-content;
+    padding-bottom: 30px;
     margin: 20px;
     border-radius: 30px;
     border: 3px solid black;
@@ -72,12 +75,15 @@ nav {
 .description {
     padding-left: 40px;
     padding-right: 40px;
+    width: auto;
+    
 }
 
 .descriptionName {
     font-size: large;
     padding-left: 40px;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .images {
@@ -95,6 +101,7 @@ nav {
     padding-left: 40px;
     padding-bottom: 20px;
     padding-top: 20px;
+    font-weight: bold;
 }
 
 .imageContainer {
