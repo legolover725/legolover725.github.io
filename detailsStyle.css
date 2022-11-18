@@ -65,7 +65,7 @@ nav {
 .details {
     background-color: #9bcbec;
     width: 65%;
-    height: fit-content;
+    height: max-content;
     padding-bottom: 30px;
     margin: 20px;
     border-radius: 30px;
