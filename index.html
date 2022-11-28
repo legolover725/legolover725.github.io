@@ -7,46 +7,49 @@
     <title>Restaurants In And Around Baltimore</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5700643706882629"
-     crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
-        <a style = "text-decoration: none; color: #222F3D" href="index.html">
+        <a style = "text-decoration: none; color: #222F3D; text-align: center;" href="index.html">
             <h1 id="homeTitle">RESTAURANTS IN AND AROUND BALTIMORE</h1>
         </a>
     </div>
+    <div class="soundToggle">
+        <img id="toggleIcon" src="Images/sound.png" alt="Sound Toggle">
+        <div id="toggleBase" onclick="toggleSound()"></div>
+        <div id="toggleCircle" onclick="toggleSound()"></div>
+    </div>
     <div class="filter-container">
         <h3 id="filterText">Filters:</h3>
-        <div class="filter-element" id="priceFilter" onclick="displayPriceFilter()">Price</div>
-        <div class="price-choice" id="lowPrice" onclick="selectFilter('lowPrice'), lowestPrice()">$</div>
-        <div class="price-choice" id="midPrice" onclick="selectFilter('midPrice'), mediumPrice()">$$</div>
-        <div class="price-choice" id="highPrice" onclick="selectFilter('highPrice'), highestPrice()">$$$</div>
-        <div class="filter-element" id="ratingFilter" onclick="displayRatingFilter()">Rating</div>
-        <div class="rating-choice" id="4StarsFilter" onclick="selectFilter('4StarsFilter'), fourStars()">
+        <div class="filter-element" id="priceFilter" onclick="displayPriceFilter(), playClick()">Price</div>
+        <div class="price-choice" id="lowPrice" onclick="selectFilter('lowPrice'), lowestPrice(), playClick()">$</div>
+        <div class="price-choice" id="midPrice" onclick="selectFilter('midPrice'), mediumPrice(), playClick()">$$</div>
+        <div class="price-choice" id="highPrice" onclick="selectFilter('highPrice'), highestPrice(), playClick()">$$$</div>
+        <div class="filter-element" id="ratingFilter" onclick="displayRatingFilter(), playClick()">Rating</div>
+        <div class="rating-choice" id="4StarsFilter" onclick="selectFilter('4StarsFilter'), fourStars(), playClick()">
             <img class="star" src="Images/star.png" alt="star">
             <img class="star" src="Images/star.png" alt="star">
             <img class="star" src="Images/star.png" alt="star">
             <img class="star" src="Images/star.png" alt="star">
             <img class="star" src="Images/blank-star.png" alt="no-star">
         </div>
-        <div class="rating-choice" id="4.5StarsFilter" onclick="selectFilter('4.5StarsFilter'), fourAndAHalfStars()">
-            <img class="star" src="Images/star.png" alt="star">
-            <img class="star" src="Images/star.png" alt="star">
-            <img class="star" src="Images/star.png" alt="star">
-            <img class="star" src="Images/star.png" alt="star">
-            <img class="star" src="Images/half_star.png" alt="half_star">
+        <div class="rating-choice" id="4.5StarsFilter" onclick="selectFilter('4.5StarsFilter'), fourAndAHalfStars(), playClick()">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/half_star.png" alt="half_star">
         </div>
-        <div class="rating-choice" id="5StarsFilter" onclick="selectFilter('5StarsFilter'), fiveStars()">
-            <img class="star" src="Images/star.png" alt="star">
-            <img class="star" src="Images/star.png" alt="star">
-            <img class="star" src="Images/star.png" alt="star">
-            <img class="star" src="Images/star.png" alt="star">
-            <img class="star" src="Images/star.png" alt="star">
+        <div class="rating-choice" id="5StarsFilter" onclick="selectFilter('5StarsFilter'), fiveStars(), playClick()">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
+            <img class="star" src="images/star.png" alt="star">
         </div>
     </div>
     <div class="grid-container">
-        <a href="miss-shirley's-cafe.html" style="text-decoration: none; color: #222F3D;" class="grid-element mediumPrice stars4">
+        <a href="miss-shirley's-cafe.html" style="text-decoration: none; color: #222F3D;" class="grid-element mediumPrice stars4" onclick="playClick()">
                 <div class="restaurant-name">Miss Shirley's Cafe</div>
                 <img class="restaurant-image" src="Images/miss-shirley's-images/Miss Shirley's Cafe.jpeg" alt="Grapefruit Brûlée">
         </a>
@@ -95,5 +98,6 @@
             <img class="restaurant-image" src="Images/ovenbird-bakery-images/Ovenbird Bakery.jpeg" alt="Bagels">
         </a>
     </div>
+    
 </body>
 </html>
