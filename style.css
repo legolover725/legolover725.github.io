@@ -145,4 +145,37 @@ body {
     padding-right: 15px;
     margin: 0 auto;
     border: 3px solid black;
+    overflow: hidden;
+}
+
+.soundToggle {
+    height: 15px;
+    position: absolute;
+    margin: 25px 90%;
+}
+
+#toggleIcon {
+    position: absolute;
+    width: 32.5px;
+    height: 32.5px;
+}
+
+#toggleBase {
+    width: 50px;
+    height: 10px;
+    background-color: #0089e5;
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 40px;
+    border-radius: 1000px;
+}
+
+#toggleCircle {
+    border-radius: 100%;
+    background-color: gray;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-left: 82.5px;
+    margin-top: 8.5px;
 }
