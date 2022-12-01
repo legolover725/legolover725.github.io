@@ -256,6 +256,28 @@ function fiveStars(){
     }
 }
 
+var sound = true;
+function playClick(){
+    if(sound){
+        var audio = new Audio("Click.mp3");
+        audio.loop = false;
+        audio.play();
+    }
+}
+
+function toggleSound(){
+    if(!sound){
+        sound = true;
+        document.getElementById("toggleCircle").style.marginLeft = "82.5px";
+        document.getElementById("toggleBase").style.backgroundColor = "#0089e5";
+    }
+    else{
+        sound = false;
+        document.getElementById("toggleCircle").style.marginLeft = "37.5px";
+        document.getElementById("toggleBase").style.backgroundColor = "rgb(102,184,239)";
+    }
+}
+
 // priceFilters = [];
 // ratingFilters = [];
 // priceFilters = document.getElementsByClassName("priceChoice");
